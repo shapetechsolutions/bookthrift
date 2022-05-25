@@ -15,6 +15,10 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/example', function () {
+    return Inertia::render('Example');
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
