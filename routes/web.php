@@ -15,6 +15,10 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/get-amadeus-access-token', function () {
+    return Inertia::render('AccessToken');
+});
+
 Route::get('/example', function () {
     return Inertia::render('Example');
 });
