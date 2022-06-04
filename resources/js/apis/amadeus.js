@@ -37,4 +37,8 @@ export default {
             return null
         }
     },
+    fetchAirportDirectDestinations: async (params) => {
+        return await amadeus.get('/airport/direct-destinations', { params })
+
+    },
 }

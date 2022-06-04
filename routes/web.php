@@ -19,6 +19,10 @@ Route::get('/get-amadeus-access-token', function () {
     return Inertia::render('AccessToken');
 });
 
+Route::get('airports/direct-destinations' ,function () {
+    return Inertia::render('Airports/DirectDestinations');
+});
+
 Route::get('/example', function () {
     return Inertia::render('Example');
 });
