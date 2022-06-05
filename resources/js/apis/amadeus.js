@@ -4,10 +4,10 @@ import qs from 'qs';
 const client_id = 'DEoXpcuHVV2NcNo7fcGXC8AtGFqG3ejG'
 const client_secret = 'GpuMR3MlKhsytRwX'
 const base_url = 'https://test.api.amadeus.com/v1/'
-const accessToken = 'H7Mb6Atkw7A1qlCLFUfv4hrPsAad'
+const accessToken = 'xipNeFCmx4112j0Xq3RraA6CxtWs'
 const Authorization = `Bearer ${accessToken}`
 
-const data = qs.stringify({
+const data = new URLSearchParams({
     grant_type: 'client_credentials',
     client_id, client_secret,
 });
@@ -15,9 +15,8 @@ const data = qs.stringify({
 const config = {
   method: 'post',
   url: base_url + 'security/oauth2/token',
-  data,
+  data: data.toString(),
 };
-
 
 const amadeus = axios.create({
     baseURL: base_url,
