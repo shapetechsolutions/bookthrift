@@ -7,11 +7,17 @@
         <button @click="addBooking()" class="px-4 py-2 mr-2 text-white uppercase bg-blue-500 rounded">Add</button>
         <button @click="addBooking()" class="px-4 py-2 text-white uppercase bg-red-500 rounded">Subtract</button>
       </div>
+      <PolicyModal />
   </div>
 </template>
 
 <script>
+import PolicyModal from '@/Components/PolicyModal'
+
 export default {
+    components: {
+        PolicyModal
+    },
     data(){
         return {
             numberOfBookings: 0
