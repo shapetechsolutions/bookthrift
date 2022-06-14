@@ -26,6 +26,9 @@ Route::get('airports/direct-destinations' ,function () {
 Route::get('/example', function () {
     return Inertia::render('Example');
 });
+Route::get('/landingpage', function () {
+    return Inertia::render('LandingPage');
+});
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
