@@ -16,31 +16,36 @@ use Inertia\Inertia;
 */
 
 Route::get('/get-amadeus-access-token', function () {
-    return Inertia::render('AccessToken');
+  return Inertia::render('AccessToken');
 });
 
-Route::get('airports/direct-destinations' ,function () {
-    return Inertia::render('Airports/DirectDestinations');
+Route::get('airports/direct-destinations', function () {
+  return Inertia::render('Airports/DirectDestinations');
 });
 
-Route::get('/example', function () {
-    return Inertia::render('Example');
-});
 Route::get('/landingpage', function () {
-    return Inertia::render('LandingPage');
+  return Inertia::render('LandingPage');
 });
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+  return Inertia::render('Welcome', [
+    'canLogin' => Route::has('login'),
+    'canRegister' => Route::has('register'),
+    'laravelVersion' => Application::VERSION,
+    'phpVersion' => PHP_VERSION,
+  ]);
+})->name('homepage');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+  Route::prefix('product')->name('product.')->group(function () {
+    $products = ['Flight', 'Hotel', 'Bus', 'Train', 'Ferry', 'Holiday', 'Insurance', 'Marketing'];
+    foreach ($products as $product) {
+      Route::get('/' . strtolower($product), function () use ($product) {
+        return Inertia::render('Products/' . $product);
+      })->name(strtolower($product));
+    }
+  });
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
