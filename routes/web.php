@@ -23,7 +23,7 @@ Route::get('airports/direct-destinations', function () {
   return Inertia::render('Airports/DirectDestinations');
 });
 
-Route::get('/landingpage', function () {
+Route::get('/landing-page', function () {
   return Inertia::render('LandingPage');
 });
 
