@@ -27,6 +27,10 @@ Route::get('/landing-page', function () {
   return Inertia::render('LandingPage');
 });
 
+Route::get('/agent-register', function () {
+  return Inertia::render('AgentRegister');
+});
+
 Route::get('/', function () {
   return Inertia::render('Welcome', [
     'canLogin' => Route::has('login'),
