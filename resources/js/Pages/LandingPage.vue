@@ -1,28 +1,26 @@
 <template>
-<div class="bg-blue-100">
+<div class="bg-blue-100"> <!--Background Picture-->
     <div class="container p-8 bg-gray-50 ">
-        <div class="max-w-sm bg-lime-400  mt-10 py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center text-700 font-bold text-2xl py-4 border-b"><h2>AGENT LOGIN</h2></div>
-
+        <div class="max-w-sm bg-lime-400  mt-10 py-4 px-6 rounded-lg shadow-lg">
+            <div class="text-center text-700 font-bold text-2xl py-4 border-b-4"><h2>AGENT LOGIN</h2>
+            </div>
             <div class="text-right py-4"> 
                 <div class="my-3">
-                    <input type="text" class="rounded-full w-full pl-3 border border-gray-200" placeholder="Email"> 
+                    <input type="text" class="rounded-full w-full pl-3 border border-gray-200" placeholder="Email">
                 </div>
                 <div class="my-3">
                     <input type="password" class="rounded-full w-full pl-3 border border-gray-200" placeholder="Password"> 
                 </div>
-                
             </div>
-
             <div class="py-4 border-t flex justify-between">
                <Link class="text-600 text-red-500 underline text-sm" :href="route('password.request')">Forgot password?</Link>
-                <Button>LOGIN</Button>
-                
+                <Button>LOGIN</Button> 
             </div>
-
              <div class="py-4 border-t text-center">
                <Link class="text-blue-500 underline  text-md" :href="route('register')">New User?</Link>
-           
+            </div>
+            <div class="py-4 border-t text-center">
+               <Link class="text-black-500 text-md" :href="route('register')">Terms of Use / Privacy Policy</Link> <!--href-->
             </div>
         </div>
     </div>
@@ -30,7 +28,7 @@
 
 
 <div class="bg-blue-100">
-    <div class="container bg-white p-8">
+    <div class="container bg-white p-8"> <!--Background Picture if possible-->
         <div class="max-w-sm bg-lime-400 py-4 px-6 rounded-lg  shadow-lg">
             <div class="text-center text-700 font-bold text-2xl py-4 border-b"><h2>Welcome to Book Thrift</h2></div>
             <div class="text-center py-4"> 
@@ -42,10 +40,10 @@
 </div>
 
 <div class="text-center text-black-50 font-bold text-2xl py-4 border-b"><h2>Book Thrift Product</h2></div>
-<div class="bg-blue-100">
+<div class="bg-blue-100"> <!--Background Picture if possible-->
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Flights Logo-->
                  <p class="text-black-600 mb-5">*Flights</p>
                 <p class="text-gray-600 indent-5 text-justify">A ticket entitled to a holder to access a travel and a seat on a flight on an aircraft. It is an electronic record, issued by an airline which signifies confirmation. An airline ticket is necessary to be able to proceed a boarding pass during check-in at the airport.</p>
             </div>
@@ -55,7 +53,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Hotels Logo-->
                  <p class="text-black-600 mb-5">*Hotels</p>
                 <p class="text-gray-600 indent-5 text-justify">An arrangement to book for accommodations such as a hotel rooms. It works by processing secure online reservations made through a hotel's website.</p>
             </div>
@@ -66,7 +64,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Holidays Logo-->
                  <p class="text-black-600 mb-5">*Holidays</p>
                 <p class="text-gray-600 indent-5 text-justify">A holiday arrangement package at a fixed price in which the travel company arranges your travel, hotels, and meals. A tour arranged by a travel agent; transportation and food and lodging are all provided at an inclusive price.</p>
             </div>
@@ -77,7 +75,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Bus Logo-->
                  <p class="text-black-600 mb-5">*Bus</p>
                 <p class="text-gray-600 indent-5 text-justify">An official piece of paper which signifies that you have paid as your charged fair for a journey on a bus.</p>
             </div>
@@ -88,7 +86,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Ferry Logo-->
                  <p class="text-black-600 mb-5">*Ferry</p>
                 <p class="text-gray-600 indent-5 text-justify">A form of ticket issuance for ferry, often operates regular return services. You're booking for ferry or train travel forms a contract with us, as well as a contract with the ferry and made available to you before any booking is completed, and which you also accept when a booking is made.</p>
             </div>
@@ -99,7 +97,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Train Logo-->
                  <p class="text-black-600 mb-5">*Train</p>
                 <p class="text-gray-600 indent-5 text-justify">Train Service means a service for the carriage of passengers by rail. Train Service means the running of a Train between specified origins and destinations.</p>
             </div>
@@ -110,7 +108,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Insurance Logo-->
                  <p class="text-black-600 mb-5">*Insurance</p>
                 <p class="text-gray-600 indent-5 text-justify">Covers the costs and losses associated with traveling. It is a useful protection for those traveling domestically or abroad. Includes 24/7 emergency services, such as replacing lost passports, cash wire assistance, and re-booking canceled flights.</p>
             </div>
@@ -121,7 +119,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4"> 
+            <div class="text-center py-4"> <!--Payment Logo-->
                  <p class="text-black-600 mb-5">*Payment</p>
                 <p class="text-gray-600 indent-5 text-justify">Travel agents can accept bill payments through the VIA portal powered by Bayad Partner. Travel agents can assist payments to 224 billers nationwide including major electric and water billers such as Meralco, Maynilad, and Manila Water.</p>
             </div>
@@ -133,7 +131,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4">
+            <div class="text-center py-4"> <!--Client Picture-->
                 <p class="text-gray-600 text-justify">Punctuality is one of the strongest virtues an employee can possess. They must arrive on time, take the designated time breaks to ensure efficiency and productivity.</p>
                 <p class="text-gray-600 text-center mt-2">- John Aldrin Argete</p>
             </div>
@@ -144,7 +142,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4">
+            <div class="text-center py-4"> <!--Client Picture-->
                 <p class="text-gray-600 text-justify">Creativity and the free exchange of ideas can only flow when employees have a healthy work environment. But interpersonal conflicts and strict hierarchical work culture can hinder an employee from expressing freely.</p>
                 <p class="text-gray-600 text-center mt-2">- Mark Brian Binay</p>
             </div>
@@ -155,7 +153,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4">
+            <div class="text-center py-4"> <!--Client Picture-->
                 <p class="text-gray-600 text-justify">Employees in managerial positions are people who are always looking after others, i.e., their team members. They are constantly guiding others to progress and advance. However, they need guidance to reach their goals too.</p>
                 <p class="text-gray-600 text-center mt-2">- Mark Angelou Bañas</p>
             </div>
@@ -163,11 +161,11 @@
     </div>
 </div>
 
-<div class="text-center text-black-50 font-bold text-2xl py-4 border-b"><h2>Work with Book Thrift</h2></div>
+<div class="text-center text-black-50 font-bold text-2xl py-4 border-b"><h2>Work with Book Thrift</h2></div> <!--Background Picture-->
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400   py-4 px-6 rounded-lg  shadow-lg">
-            <div class="text-center py-4">
+            <div class="text-center py-4"> <!--Join Us Picture/Logo-->
                  <p class="text-gray-600 text-center mb-5">Join Us?</p>
                 <p class="text-gray-600 text-justify">Employing roughly 7.200 people who all share a passion for fashion and team spirit, the group enjoys success worldwide with its attractive brands. All of our employees worldwide see themselves as part of a huge team, united by our corporate goals and the conviction that successful cooperation and the passion for our fashion alone can enable us to offer attractive products to our customers.</p>
             </div>
@@ -178,7 +176,7 @@
 <div class="bg-blue-100">
     <div class="container bg-white p-8">
         <div class="max-w-sm bg-lime-400  py-4 px-6 rounded-lg shadow-lg">
-            <div class="text-center py-4">
+            <div class="text-center py-4"> <!--Mission & Value Picture/Logo-->
                  <p class="text-gray-600 text-center mb-5">Mission and Values</p>
                 <p class="text-gray-600 text-justify">The mission statement communicates the purpose of the organization. The vision statement provides insight into what the company hopes to achieve or become in the future. The values statement reflects the organization's core principles and ethics.</p>
             </div>
@@ -186,13 +184,65 @@
     </div>
 </div>
 
-<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Our company partners worldwide</h2></div>
-<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Via is a member of</h2></div>
-<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Our Banking Partners</h2></div>
+<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Our company partners worldwide</h2></div> <!--Worldwide Partners Logo-->
+<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Via is a member of</h2></div> <!--Members Logo-->
+<div class="text-center text-black-50 font-bold text-2xl py-4 border-b mb-20"><h2>Our Banking Partners</h2></div> <!--Partnership Logo-->
 
+<div class="max-w-full bg-lime-400 py-4 px-6 shadow-lg">
+<div class="row">
+  <div class="column text-black-600">
+    <h2 class="text-lg text-black-600 font-bold">Company</h2>
+    <a href="#" class="underline text-grey-50 mt-2 ">About Us</a><br>
+    <a href="#" class="underline text-grey-50 mt-2 ">Careers</a><br>
+    <a href="#" class="underline text-grey-50 mt-2 ">Contact Us</a><br>
+  </div>
+  <div class="column">
+    <h2 class="text-lg text-black-600 font-bold">Terms and Policies</h2>
+    <a href="#" class="underline text-grey-50 mt-2">Privacy Policy</a><br>
+    <a href="#" class="underline text-grey-50 mt-2">Terms of Use</a><br>
+  </div>
+  
+  <div class="column text-black-600">
+    <h2 class="text-lg text-black-600 font-bold">Help</h2>
+   <a href="#" class="underline text-grey-50 mt-2">FAQ</a><br>
+   <a href="#" class="underline text-grey-50 mt-2">Support</a><br>
+  </div>
+</div>
+ <div class="text-black-600">
+    <h2 class="text-lg text-black-600 font-bold pl-3">Follow Us on</h2>
+   <a href="#" class="underline text-grey-50 mt-2"></a><br> <!-- Facebook Logo--> 
+   <a href="#" class="underline text-grey-50 mt-2"></a><br> <!--Youtube Logo-->
+   <a href="#" class="underline text-grey-50 mt-2"></a><br> <!--Instagram Logo-->
+   <a href="#" class="underline text-grey-50 mt-2"></a><br> <!--Twitter Logo-->
+   <a href="#" class="underline text-grey-50 mt-2"></a><br> <!--Tiktok Logo-->
+</div>
+</div>
+<div class="max-w-full bg-white py-4 px-6 shadow-lg">
+    <p class="text-center">Copyright &copy; 2022</p>
+</div>
 </template>
 
+<style>
+* {
+  box-sizing: border-box;
+}
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 150px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
 
 <script>
 import { Link } from '@inertiajs/inertia-vue3'
