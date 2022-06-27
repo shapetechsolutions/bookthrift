@@ -1,9 +1,9 @@
 <template>
-
+  
 <div class="bg-blue-100">
     <div class="container p-8 bg-gray-50 ">
         <div class="text-left pl-24 text-black-50 font-bold text-2xl py-4"><h2>AGENT REGISTRATION</h2></div>
-        <div class="max-w-md bg-lime-400  mt-8 py-4 px-6 shadow-lg">
+        <div class="max-w-md bg-lime-400 rounded-lg  mt-8 py-4 px-6 shadow-lg">
 
 
   <div class="text-center py-4"> 
@@ -67,7 +67,7 @@
                           
     </div>            
         </div>
-<div class="max-w-md bg-slate-200  mb-8 py-4 px-6 shadow-lg">
+<div class="max-w-md bg-slate-200 rounded-lg  mb-8 py-4 px-6 shadow-lg">
       <div class="text-left py-4">
 
                 <div class="my-3">
@@ -97,7 +97,7 @@
                 </div>  
      </div>
  </div>
- <div class="max-w-md bg-slate-50 mb-8 py-4 px-6 shadow-lg">
+ <div class="max-w-md bg-slate-50 rounded-lg mb-8 py-4 px-0 shadow-lg">
       <div class="text-left py-4"> 
                 
                 <div class="my-3">
@@ -125,15 +125,13 @@
 <input type="checkbox" id="" name="" value="">
 <label for="termsandcondition"> I Accept Terms and Conditions</label><br>
 </div>
-
+<div class="text-left pl-20 ml-11 text-black-50 text-l px-4">
+<Button>Register</Button>
+ </div>
     </div>
     
 </div>
-
-
 </template>
-
-
 
 
 
@@ -143,7 +141,6 @@ import PolicyModal from '@/Components/PolicyModal'
 import Button from '@/Components/Button'
 import Dropdown from '@/Components/Dropdown'
 import Checkbox from '@/Components/Checkbox'
-
 export default {
     components: {
         Link,
@@ -152,7 +149,7 @@ export default {
         Dropdown,
         Checkbox,
 
-    }
+       }
 }
 
 </script>
