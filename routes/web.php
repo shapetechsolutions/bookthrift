@@ -32,6 +32,18 @@ Route::get('/agent-register', function () {
 });
 
 Route::get('/', function () {
+  return Inertia::render('');
+});
+
+Route::get('/', function () {
+  return Inertia::render('');
+});
+
+Route::get('/', function () {
+  return Inertia::render('');
+});
+
+Route::get('/', function () {
   return Inertia::render('Welcome', [
     'canLogin' => Route::has('login'),
     'canRegister' => Route::has('register'),
