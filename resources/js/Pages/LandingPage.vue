@@ -20,7 +20,7 @@
                <Link class="text-blue-500 underline  text-md" :href="route('register')">New User?</Link>
             </div>
             <div class="py-4 border-t text-center">
-               <Link class="text-black-500 text-md" :href="route('register')">Terms of Use / Privacy Policy</Link> <!--href-->
+               <Link class="text-black-500 underline text-md" :href="route('register')">Terms of Use / Privacy Policy</Link> <!--href-->
             </div>
         </div>
     </div>
