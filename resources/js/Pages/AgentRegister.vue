@@ -2,7 +2,7 @@
   
 <div class="bg-blue-100">
     <div class="container p-8 bg-gray-50 ">
-        <div class="text-left pl-24 text-black-50 font-bold text-2xl py-4"><h2>AGENT REGISTRATION</h2></div>
+        <div class="text-left pl-24 text-black-50 font-bold text-2xl py-2"><h2>AGENT REGISTRATION</h2></div>
         <div class="max-w-md bg-lime-400 rounded-lg  mt-8 py-4 px-6 shadow-lg">
 
 

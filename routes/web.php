@@ -31,6 +31,10 @@ Route::get('/agent-register', function () {
   return Inertia::render('AgentRegister');
 });
 
+Route::get('/dashboard', function () {
+  return Inertia::render('Dashboard');
+});
+
 Route::get('/', function () {
   return Inertia::render('');
 });
